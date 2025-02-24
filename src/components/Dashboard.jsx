@@ -82,10 +82,8 @@ const Dashboard = () => {
   }
 
   const inputs = [
-    { type: "pdf" },
-    { type: "photo" },
     { type: "text" },
-    { type: "ppt" },
+    // { type: "ppt" },
   ];
 
   const quizzes = [

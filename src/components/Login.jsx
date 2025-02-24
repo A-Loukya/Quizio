@@ -88,34 +88,34 @@ const Login = () => {
           <div className=''>
             {!IssignIn && <div className='flex flex-col'>
               <label className='font-Fredoka text-md'>Name</label>
-              <input type='text' className='w-full text-black p-2 rounded-md my-2 opacity-30' ref={name} />
+              <input type='text' className='w-full text-white p-2 rounded-md my-2 bg-[#52535C]' ref={name} />
             </div>}
 
 
             <div className='flex flex-col'>
               <label className='font-Fredoka text-md mt-4'>Email</label>
-              <input type='email' className='w-full text-black p-2 rounded-md my-2 opacity-30' ref={email} />
+              <input type='email' className='w-full text-white p-2 rounded-md my-2 bg-[#52535C]' ref={email} />
             </div>
 
             <div className='flex flex-col'>
               <label className='font-Fredoka text-md mt-4'>Password</label>
-              <input type='password' className='w-full text-black p-2 rounded-md my-2 opacity-30' ref={password} />
+              <input type='password' className='w-full text-white p-2 rounded-md my-2 bg-[#52535C]' ref={password} />
             </div>
 
             <p className='font-Fredoka text-md text-gray-400 mt-4'>{IssignIn ? "Don't" : "Already"} have an account? <span className='text-white cursor-pointer hover:underline' onClick={toggleSignIn}>{IssignIn ? "Sign Up" : "Sign In"}</span></p>
-            <button type='submit' className='w-full border rounded-md text-center py-3 mt-3 bg-white text-black font-playfair font-bold text-xl'>{IssignIn ? "Sign In" : "Sign Up"}</button>
+            <button type='submit' className='w-full border rounded-md text-center py-3 my-5 bg-white text-black font-playfair font-bold text-xl'>{IssignIn ? "Sign In" : "Sign Up"}</button>
 
-            <div className='flex flex-row justify-center items-center my-4'>
+            {/* <div className='flex flex-row justify-center items-center my-4'>
               <hr className='w-28'></hr>
               <span className='mx-3 text-sm'>Or {IssignIn ? "Sign In" : "Sign Up"} with</span>
               <hr className='w-28'></hr>
-            </div>
+            </div> */}
 
-            <div className='flex flex-row justify-between text-center'>
+            {/* <div className='flex flex-row justify-between text-center'>
               <button className='w-[100px] border rounded-md py-2'>Go</button>
               <button className='w-[100px] border rounded-md py-2'>Gi</button>
               <button className='w-[100px] border rounded-md py-2'>fa</button>
-            </div>
+            </div> */}
           </div>
         </form>
       </div>
